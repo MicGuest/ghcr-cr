@@ -6,6 +6,8 @@ WORKDIR /webapp
 
 RUN pip install -r requirements.txt
 
+EXPOSE 8000
+
 COPY webapp/* /webapp
 
 ENTRYPOINT [ "uvicorn" ]
